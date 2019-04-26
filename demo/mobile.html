@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset="UTF-8"/>
+    <title>京东手机</title>
+    <style>
+        body {
+            width: 960px;
+            margin: 0 auto;
+        }
+        .mov {
+            margin: 20px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>京东手机</h1>
+    <hr>
+    {% for mobile in mobile_list %}
+	<h2>手机名称介绍：{{mobile.Mobile_name }}</h2>
+    <dl class="mov">
+        <dt>促销活动内容：{{mobile.Mobile_comment }}</dt>
+        <dd>手机价格：{{mobile.Mobile_price}}</dd>
+    </dl>
+    {% endfor %}
+</body>
+</html>
